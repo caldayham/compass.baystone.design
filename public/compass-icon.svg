@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Outer circle -->
+  <circle 
+    cx="16" 
+    cy="16" 
+    r="15" 
+    fill="#2563eb"
+  />
+  
+  <!-- Inner circle -->
+  <circle 
+    cx="16" 
+    cy="16" 
+    r="2" 
+    fill="white"
+  />
+  
+  <!-- Compass needle -->
+  <g transform="rotate(45, 16, 16)">
+    <!-- North (Primary) -->
+    <path 
+      d="M16 4 L19 15 L16 13 L13 15 Z" 
+      fill="white"
+    />
+    
+    <!-- South (Secondary) -->
+    <path 
+      d="M16 28 L19 17 L16 19 L13 17 Z" 
+      fill="white"
+      opacity="0.6"
+    />
+  </g>
+</svg>

@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Compass - Internal Project Management Platform
 
-## Getting Started
+Internal platform for managing Baystone Design infrastructure projects, automating workflows, and improving client communication.
 
-First, run the development server:
+## Local Development Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Core Features & Status
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Active Development
+- [ ] Project Dashboard
+- [ ] Client Communication Timeline
+- [ ] Design File Management
+- [ ] AI-Assisted Design Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Planned Features
+- [ ] Automated Documentation
+- [ ] Client Portal
+- [ ] Team Analytics
+- [ ] Resource Management
 
-## Learn More
+## Project Structure
+```
+src/
+├── app/          # Next.js pages and routing
+├── components/   # Reusable UI components
+├── lib/          # Utilities and helpers
+└── assets/
+    └── fonts/   # Typography assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Deployed on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Setup
+Create `.env.local`:
+```env
+NEXT_PUBLIC_API_URL=
+# Add other environment variables as needed
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Domains
+- Production: compass.baystone.design
+- Development: dev.compass.baystone.design
 
-## Deploy on Vercel
+## Key Contacts
+- Project Lead: [Name]
+- Development: [Name]
+- Design: [Name]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
+- All client data must remain private
+- Regular backups are stored in [location]
+- Team documentation in Notion: [link]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## TODO
+- Set up proper error logging
+- Implement user roles/permissions
+- Create automated testing suite
+- Document API endpoints
+
+---
+
+Internal use only - Baystone Design
