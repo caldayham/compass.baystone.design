@@ -1,5 +1,5 @@
+import RecentProjects from "@/components/RecentProjects";
 import { Activity, Folder, Users, Calendar, Bell, Search } from "lucide-react";
-import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -84,32 +84,7 @@ export default function Dashboard() {
           </div>
 
           {/* Recent Projects Section */}
-          <div className="mt-8">
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Recent Projects</h2>
-            <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
-              <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-                {[1, 2, 3].map((project) => (
-                  <li key={project} className="p-4 hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm font-medium text-gray-900 dark:text-white">
-                          Landscape Design Project {project}
-                        </p>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
-                          Updated 2 hours ago
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-4">
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                          In Progress
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <RecentProjects />
         </div>
       </main>
     </div>
